@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 2px; /* Add padding for content */
+          
+        }
+        .container {
+            max-width: 350px;
+            margin: 0 auto; /* Center container */
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+        .text {
+            padding: 10px;
+            margin: 0 auto;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        input {
+            padding: 15px;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid rgb(5, 47, 235);
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+        button {
+            padding: 15px;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 10px;
+            color: white;
+            justify-content: center;
+            height: 3em;
+            width: 100%; /* Full width */
+            font-weight: 450;
+            background: linear-gradient(90deg, #1e39a5, #c50e07); 
+            background-size: 300% 300%;
+            border: none; /* Remove border */
+            cursor:pointer; /* Change cursor on hover */
+        }
+        button:hover {
+            background-position:right; /* Change background on hover */
+        }
+        .id {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 5px;
+            text-align: center;
+            width: 90%;
+            background: linear-gradient(135deg, #6adbbd, #1d48d6);
+            border-radius: 10px;
+            padding: 12px;
+            color: white; /* Text color */
+        }
+        .footer{
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Prime Numbers</h1>
+        <label class="text" for="primeLimit">Enter a Limit :</label>
+        <input type="number" id="primeLimit" placeholder="Enter a Number" />
+        <button onclick="findPrimes()">Show Prime</button>
+        <h2>Prime numbers:</h2>
+        <div class="id">
+            <footer class="footer">Re-Designed By Ranjithkumar.R ( <a href="https://github.com/beggarsmind">Beggar's Mind</a> )</footer>Output :
+        <p id="result"> 
+          
+        </div>
+       
+    </p>
+    </div>
+    
+    <script>
+        function isPrime(num) {
+            if (num < 2) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+        function findPrimes() {
+            let n = document.getElementById("primeLimit").value;
+            let result = "";
+            let lineNumber = 1;
+            for (let i = 2; i <= n; i++) {
+                if (isPrime(i)) {
+                    result += lineNumber + ". " + i + "\n"; 
+                    lineNumber++;
+                    
+
+                }
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+    
+</body>
+</html>
