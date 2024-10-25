@@ -3,14 +3,16 @@ Link : https://beggarsmind.github.io/prime_number/
 
  A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers. In other words, a prime number has exactly two distinct positive divisors: 1 and itself. 
 
-Importance of Prime Numbers
-Foundation of Number Theory: Prime numbers are considered the "building blocks" of the integers because any integer greater than 1 can be expressed as a product of primes (this is known as the Fundamental Theorem of Arithmetic).
+Importance of Prime Numbers :- 
 
-Applications in Cryptography: Prime numbers play a crucial role in modern cryptography, especially in algorithms like RSA, which relies on the difficulty of factoring the product of two large primes.
+*Foundation of Number Theory: Prime numbers are considered the "building blocks" of the integers because any integer greater than 1 can be expressed as a product of primes (this is known as the Fundamental Theorem of Arithmetic).
 
-Mathematical Research: Primes are a subject of extensive research in mathematics, leading to many interesting theorems and conjectures, such as the Goldbach Conjecture and the Twin Prime Conjecture.
+*Applications in Cryptography: Prime numbers play a crucial role in modern cryptography, especially in algorithms like RSA, which relies on the difficulty of factoring the product of two large primes.
 
-Prime Number Theorems
+*Mathematical Research: Primes are a subject of extensive research in mathematics, leading to many interesting theorems and conjectures, such as the Goldbach Conjecture and the Twin Prime Conjecture.
+
+Prime Number Theorems : -
+8
 Prime Number Theorem: This theorem describes the asymptotic distribution of prime numbers. It states that the number of primes less than a given number 
 𝑛
 n is approximately 
@@ -23,7 +25,7 @@ log
 )
 n/log(n).
 
-Wilson's Theorem: A prime number 
+ * Wilson's Theorem: A prime number 
 𝑝
 p satisfies Wilson's theorem if 
 (
@@ -47,8 +49,3 @@ mod 
 p−1, when divided by 
 𝑝
 p, leaves a remainder of -1.
-
-Fun Facts
-The largest known prime number (as of now) has millions of digits and is found using specialized algorithms and computer programs.
-The number 1 is not considered a prime number, as it only has one positive divisor.
-There are prime numbers in various number systems beyond the standard decimal (base 10) system.
