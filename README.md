@@ -11,8 +11,9 @@ Importance of Prime Numbers :-
 
 *Mathematical Research: Primes are a subject of extensive research in mathematics, leading to many interesting theorems and conjectures, such as the Goldbach Conjecture and the Twin Prime Conjecture.
 
-Prime Number Theorems : -
-8
+Prime Number Theorems :-
+
+
 Prime Number Theorem: This theorem describes the asymptotic distribution of prime numbers. It states that the number of primes less than a given number 
 𝑛
 n is approximately 
